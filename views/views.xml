@@ -1,0 +1,209 @@
+<odoo>
+  <data>
+    <!-- golongan tree view -->
+    <record model="ir.ui.view" id="rsudlmbg_golongan_tree">
+      <field name="name">rsudlmbg_golongan.tree</field>
+      <field name="model">rsudlmbg.golongan</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="golongan"/>
+          <field name="detail_golongan"/>
+        </tree>
+      </field>
+    </record>
+    <!-- golongan form view -->
+    <record model="ir.ui.view" id="rsudlmbg_golongan_form">
+      <field name="name">rsudlmbg_golongan.form</field>
+      <field name="model">rsudlmbg.golongan</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="golongan"/>
+              </group>
+              <group>
+                <field name="detail_golongan"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- jabatan tree view -->
+    <record model="ir.ui.view" id="rsudlmbg_jabatan_tree">
+      <field name="name">rsudlmbg_jabatan.tree</field>
+      <field name="model">rsudlmbg.jabatan</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="urutan" widget="integer" type="char"/>
+          <field name="jabatan"/>
+        </tree>
+      </field>
+    </record>
+    <!-- jabatan form view -->
+    <record model="ir.ui.view" id="rsudlmbg_jabatan_form">
+      <field name="name">rsudlmbg_jabatan.form</field>
+      <field name="model">rsudlmbg.jabatan</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="urutan"/>
+              </group>
+              <group>
+                <field name="jabatan"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- pendidikan tree view -->
+    <record model="ir.ui.view" id="rsudlmbg_pendidikan_tree">
+      <field name="name">rsudlmbg_pendidikan.tree</field>
+      <field name="model">rsudlmbg.pendidikan</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="akronim_pendidikan"/>
+          <field name="pendidikan"/>
+        </tree>
+      </field>
+    </record>
+    <!-- pendidikan form view -->
+    <record model="ir.ui.view" id="rsudlmbg_pendidikan_form">
+      <field name="name">rsudlmbg_pendidikan.form</field>
+      <field name="model">rsudlmbg.pendidikan</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="akronim_pendidikan"/>
+              </group>
+              <group>
+                <field name="pendidikan"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- tipe pegawai tree view -->
+    <record model="ir.ui.view" id="rsudlmbg_tipe_pegawai_tree">
+      <field name="name">rsudlmbg_tipe_pegawai.tree</field>
+      <field name="model">rsudlmbg.tipe.pegawai</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="akronim_tipe_pegawai"/>
+          <field name="tipe_pegawai"/>
+        </tree>
+      </field>
+    </record>
+    <!-- tipe pegawai form view -->
+    <record model="ir.ui.view" id="rsudlmbg_tipe_pegawai_form">
+      <field name="name">rsudlmbg_tipe_pegawai.form</field>
+      <field name="model">rsudlmbg.tipe.pegawai</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="akronim_tipe_pegawai"/>
+              </group>
+              <group>
+                <field name="tipe_pegawai"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- jenis kelamin tree view -->
+    <record model="ir.ui.view" id="rsudlmbg_jenis_kelamin_tree">
+      <field name="name">rsudlmbg_jenis_kelamin.tree</field>
+      <field name="model">rsudlmbg.jenis.kelamin</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="akronim_jenis_kelamin"/>
+          <field name="jenis_kelamin"/>
+        </tree>
+      </field>
+    </record>
+    <!-- jenis kelamin form view -->
+    <record model="ir.ui.view" id="rsudlmbg_jenis_kelamin_form">
+      <field name="name">rsudlmbg_jenis_kelamin.form</field>
+      <field name="model">rsudlmbg.jenis.kelamin</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="akronim_jenis_kelamin"/>
+              </group>
+              <group>
+                <field name="jenis_kelamin"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+    <!-- golongan action -->
+    <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_golongan">
+      <field name="name">Golongan</field>
+      <field name="res_model">rsudlmbg.golongan</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="rsudlmbg_golongan_tree"/>
+    </record>
+    <!-- jabatan action -->
+    <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_jabatan">
+      <field name="name">Jabatan</field>
+      <field name="res_model">rsudlmbg.jabatan</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="rsudlmbg_jabatan_tree"/>
+    </record>
+    <!-- pendidikan pegawai action -->
+    <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_pendidikan">
+      <field name="name">Pendidikan</field>
+      <field name="res_model">rsudlmbg.pendidikan</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="rsudlmbg_pendidikan_tree"/>
+    </record>
+    <!-- tipe pegawai action -->
+    <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_tipe_pegawai">
+      <field name="name">Tipe Pegawai</field>
+      <field name="res_model">rsudlmbg.tipe.pegawai</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="rsudlmbg_tipe_pegawai_tree"/>
+    </record>
+    <!-- jenis kelamin action -->
+    <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_jenis_kelamin">
+      <field name="name">Jenis Kelamin</field>
+      <field name="res_model">rsudlmbg.jenis.kelamin</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="rsudlmbg_jenis_kelamin_tree"/>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Kepegawaian" id="rsudlmbg_kepegawaian.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Master Data" id="rsudlmbg_kepegawaian.master_data" parent="rsudlmbg_kepegawaian.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Jenis Kelamin" id="rsudlmbg_kepegawaian.jenis_kelamin_list" parent="rsudlmbg_kepegawaian.master_data"
+              action="rsudlmbg_kepegawaian.action_window_jenis_kelamin"/>
+    <menuitem name="Tipe Pegawai" id="rsudlmbg_kepegawaian.tipe_pegawai_list" parent="rsudlmbg_kepegawaian.master_data"
+              action="rsudlmbg_kepegawaian.action_window_tipe_pegawai"/>
+    <menuitem name="Golongan" id="rsudlmbg_kepegawaian.golongan_list" parent="rsudlmbg_kepegawaian.master_data"
+              action="rsudlmbg_kepegawaian.action_window_golongan"/>
+    <menuitem name="Jabatan" id="rsudlmbg_kepegawaian.jabatan_list" parent="rsudlmbg_kepegawaian.master_data"
+              action="rsudlmbg_kepegawaian.action_window_jabatan"/>
+    <menuitem name="Pendidikan" id="rsudlmbg_kepegawaian.pendidikan_list" parent="rsudlmbg_kepegawaian.master_data"
+              action="rsudlmbg_kepegawaian.action_window_pendidikan"/>
+  </data>
+</odoo>

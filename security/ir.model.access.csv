@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rsudlmbg_golongan,rsudlmbg_golongan,model_rsudlmbg_golongan,base.group_user,1,1,1,1
+access_rsudlmbg_jabatan,rsudlmbg_jabatan,model_rsudlmbg_jabatan,base.group_user,1,1,1,1
+access_rsudlmbg_pendidikan,rsudlmbg_pendidikan,model_rsudlmbg_pendidikan,base.group_user,1,1,1,1
+access_rsudlmbg_tipe_pegawai,rsudlmbg_tipe_pegawai,model_rsudlmbg_tipe_pegawai,base.group_user,1,1,1,1
+access_rsudlmbg_jenis_kelamin,rsudlmbg_jenis_kelamin,model_rsudlmbg_jenis_kelamin,base.group_user,1,1,1,1
