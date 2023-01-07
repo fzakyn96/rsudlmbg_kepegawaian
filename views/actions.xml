@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- golongan action -->
+        <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_golongan">
+            <field name="name">Golongan</field>
+            <field name="res_model">rsudlmbg.golongan</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="rsudlmbg_golongan_tree"/>
+        </record>
+
+        <!-- jabatan action -->
+        <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_jabatan">
+            <field name="name">Jabatan</field>
+            <field name="res_model">rsudlmbg.jabatan</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="rsudlmbg_jabatan_tree"/>
+        </record>
+            
+        <!-- pendidikan pegawai action -->
+        <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_pendidikan">
+            <field name="name">Pendidikan</field>
+            <field name="res_model">rsudlmbg.pendidikan</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="rsudlmbg_pendidikan_tree"/>
+        </record>
+            
+        <!-- tipe pegawai action -->
+        <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_tipe_pegawai">
+            <field name="name">Tipe Pegawai</field>
+            <field name="res_model">rsudlmbg.tipe.pegawai</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="rsudlmbg_tipe_pegawai_tree"/>
+        </record>
+            
+        <!-- jenis kelamin action -->
+        <record model="ir.actions.act_window" id="rsudlmbg_kepegawaian.action_window_jenis_kelamin">
+            <field name="name">Jenis Kelamin</field>
+            <field name="res_model">rsudlmbg.jenis.kelamin</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="rsudlmbg_jenis_kelamin_tree"/>
+        </record>
+    </data>
+</odoo>

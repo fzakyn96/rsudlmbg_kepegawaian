@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <!-- Top Menu Item -->
+        <menuitem 
+            name="Kepegawaian" 
+            id="rsudlmbg_kepegawaian.menu_root"/>
+        <!-- End Top Menu Item -->
+
+        <!-- Menu Categories -->
+        <menuitem 
+            name="Master Data" 
+            id="rsudlmbg_kepegawaian.master_data" 
+            parent="rsudlmbg_kepegawaian.menu_root"/>
+        <!-- End Menu Categories -->    
+
+        <!-- Actions (Child Of Master Data) -->
+        <menuitem 
+            name="Jenis Kelamin" 
+            id="rsudlmbg_kepegawaian.jenis_kelamin_list" 
+            parent="rsudlmbg_kepegawaian.master_data"
+            action="rsudlmbg_kepegawaian.action_window_jenis_kelamin"/>
+        
+        <menuitem 
+            name="Tipe Pegawai" 
+            id="rsudlmbg_kepegawaian.tipe_pegawai_list" 
+            parent="rsudlmbg_kepegawaian.master_data"
+            action="rsudlmbg_kepegawaian.action_window_tipe_pegawai"/>
+        
+        <menuitem 
+            name="Golongan" 
+            id="rsudlmbg_kepegawaian.golongan_list" 
+            parent="rsudlmbg_kepegawaian.master_data"
+            action="rsudlmbg_kepegawaian.action_window_golongan"/>
+        
+        <menuitem 
+            name="Jabatan" 
+            id="rsudlmbg_kepegawaian.jabatan_list" 
+            parent="rsudlmbg_kepegawaian.master_data"
+            action="rsudlmbg_kepegawaian.action_window_jabatan"/>
+
+        <menuitem 
+            name="Pendidikan" 
+            id="rsudlmbg_kepegawaian.pendidikan_list" 
+            parent="rsudlmbg_kepegawaian.master_data"
+            action="rsudlmbg_kepegawaian.action_window_pendidikan"/>
+        <!-- End Actions (Child Of Master Data) -->
+    </data>
+</odoo>

@@ -13,7 +13,7 @@ class rsudlmbg_jabatan(models.Model):
     _name = 'rsudlmbg.jabatan'
     _description = 'rsudlmbg.jabatan'
 
-    urutan = fields.Integer(string="Urutan")
+    urutan = fields.Char(string="Urutan")
     jabatan = fields.Char(string="Jabatan")
 
 class rsudlmbg_pendidikan(models.Model):
